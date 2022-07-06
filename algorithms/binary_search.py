@@ -16,7 +16,7 @@ class Binary(Search):
         print("Binary searching")
         print("---------------------------")
         start_time = datetime.now()
-        res = self._rec(0, len(self._lst), self._key)
+        res = self._rec(0, len(self._lst) - 1, self._key)
         if res != -1:
             print(res)
         else:
@@ -35,7 +35,6 @@ class Binary(Search):
         elif(key == self._lst[i]):
             return i
 
-print("CHECK")
 A = map(int,input().split())
 A = list(A)
 key = int(input())
