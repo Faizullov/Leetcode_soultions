@@ -35,6 +35,7 @@ class Binary(Search):
         elif(key == self._lst[i]):
             return i
 
+print("CHECK")
 A = map(int,input().split())
 A = list(A)
 key = int(input())
